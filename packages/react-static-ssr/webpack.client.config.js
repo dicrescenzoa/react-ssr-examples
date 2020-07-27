@@ -32,6 +32,8 @@ module.exports = (env, {mode}) => {
         }
       ]
     },
+
+    plugins: []
   };
 
   if (mode === 'development') {
