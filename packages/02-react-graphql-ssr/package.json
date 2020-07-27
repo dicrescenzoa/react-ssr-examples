@@ -1,0 +1,36 @@
+{
+  "name": "02-react-graphql-ssr",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/react-ssr": "^4.0.0",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "babel-loader": "^8.0.6",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "html-webpack-plugin": "git://github.com/ScriptedAlchemy/html-webpack-plugin#master",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "regenerator-runtime": "^0.13.5",
+    "webpack": "^5.0.0-beta.17",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "node ./dist/server/main.js",
+    "dev": "webpack-dev-server --port 3001 --hot --config ./webpack.client.config.js --open --mode development",
+    "build": "yarn clean && yarn build:client && yarn build:server",
+    "build:client": "webpack --config ./webpack.client.config.js --mode production",
+    "build:server": "webpack --config ./webpack.server.config.js --mode production",
+    "clean": "rm -rf dist"
+  }
+}
