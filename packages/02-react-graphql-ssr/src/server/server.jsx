@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, "../client")));
 
 const renderReactApp = async (req, res) => {
   try {
-      const __INITIAL_STATE__ = await getApolloSSRInitialaData(ReactApp);
+    const __INITIAL_STATE__ = await getApolloSSRInitialaData(ReactApp);
     const RENDERED_REACT_APP = await renderToStringWithData(<ReactApp />);
 
     const html = `
@@ -45,10 +45,10 @@ const renderReactApp = async (req, res) => {
 
 app.get("/", renderReactApp);
 
-app.listen(3001, (err) => {
+app.listen(3003, (err) => {
   if (err) {
     console.error(err);
     return;
   }
-  console.log(`Listening at http://localhost:3001/`);
+  console.log(`Listening at http://localhost:3003/`);
 });

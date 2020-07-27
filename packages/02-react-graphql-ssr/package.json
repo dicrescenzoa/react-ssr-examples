@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "node ./dist/server/main.js",
-    "dev": "webpack-dev-server --port 3001 --hot --config ./webpack.client.config.js --open --mode development",
+    "dev": "webpack-dev-server --port 3003 --hot --config ./webpack.client.config.js --open --mode development",
     "build": "yarn clean && yarn build:client && yarn build:server",
     "build:client": "webpack --config ./webpack.client.config.js --mode production",
     "build:server": "webpack --config ./webpack.server.config.js --mode production",

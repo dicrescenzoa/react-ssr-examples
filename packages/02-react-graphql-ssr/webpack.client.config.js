@@ -13,7 +13,7 @@ module.exports = (env, {mode}) => {
 
     output: {
       path: path.resolve("./dist/client"),
-      publicPath: 'http://localhost:3001/',
+      publicPath: 'http://localhost:3003/',
       chunkFilename: "[name].chunk.js",
     },
 

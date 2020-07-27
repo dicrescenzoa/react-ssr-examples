@@ -15,7 +15,7 @@ module.exports = (env, {mode}) => {
     output: {
       path: path.resolve("./dist/server"),
       libraryTarget: "commonjs2",
-      publicPath: 'http://localhost:3002s/',
+      publicPath: 'http://localhost:3003/',
       chunkFilename: "[name].chunk.js",
     },
 
