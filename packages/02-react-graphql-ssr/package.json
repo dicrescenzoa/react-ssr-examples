@@ -14,7 +14,7 @@
     "apollo-link-http": "^1.5.17",
     "babel-loader": "^8.0.6",
     "es6-promise": "^4.2.8",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^15.3.0",
     "html-webpack-plugin": "git://github.com/ScriptedAlchemy/html-webpack-plugin#master",
     "isomorphic-fetch": "^2.2.1",
